@@ -1,8 +1,9 @@
+import { FormEvent } from "react";
 import { FormData } from "../pages";
 
 interface ReviewProps {
   formData?: FormData;
-  onSubmit: () => void;
+  onSubmit: (event: FormEvent) => void;
 }
 
 const ReviewLoanApplication: React.FunctionComponent<ReviewProps> = ({

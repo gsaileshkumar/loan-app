@@ -22,8 +22,8 @@ async def get_approval(
     resp = await decision_engine_client.get_approval(
         name, year, summary_pl_by_year, loanAmount, pre_assessment_value
     )
-    resp = Approval(approved=resp["approved"], amount=resp["amount"])
-    return DecisionEngineResponse(data=resp)
+    data = Approval(approved=resp["approved"], amount=resp["amount"])
+    return DecisionEngineResponse(data=data)
 
 
 @handle_data_processing_exception

@@ -5,10 +5,13 @@ const instance = axios.create({
 });
 
 export const api = {
-  get: <T>(url: string, params?: object, headers?: AxiosRequestHeaders) => {
+  get: (url: string, params?: object, headers?: AxiosRequestHeaders) => {
     return instance.get(url, {
       params,
       headers,
     });
+  },
+  post: (url: string, body?: object) => {
+    return instance.post(url, body);
   },
 };
