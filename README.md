@@ -22,7 +22,7 @@ Simple loan application that gets in user and business details and decides wheth
 
 - The accounting software and decision engine are already implemented. The backend uses mock data to simulate the response from these services.
 - Balance sheet provider gives balance sheet in csv format
-- Decision Engine approves Loan if `preAssessmentValue` is greater than 50% else the loan is not approved
+- Decision Engine approves Loan if `preAssessmentValue` is at-least 60% else the loan is not approved
 - Decision Engine only grants 80% of the required loan amount
 
 ## Architecture
