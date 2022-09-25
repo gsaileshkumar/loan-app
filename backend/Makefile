@@ -9,3 +9,6 @@ setup:
 
 start:
 	@uvicorn app.main:app --port 4000 --reload
+
+test:
+	@pytest
