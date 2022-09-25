@@ -6,7 +6,7 @@ async def get_approval(
     loanAmount: int,
     preAssessmentValue: int,
 ):
-    if preAssessmentValue > 60:
+    if preAssessmentValue >= 60:
         return dict(approved=True, amount=loanAmount * 0.80)
 
     return dict(approved=False, amount=0)
