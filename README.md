@@ -39,7 +39,7 @@ yarn
 yarn dev
 
 # Pre-requisite python conda virtual env
-cd gateway
+cd backend
 make setup
 make start
 
